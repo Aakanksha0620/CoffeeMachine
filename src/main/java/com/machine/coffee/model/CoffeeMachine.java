@@ -33,6 +33,9 @@ public class CoffeeMachine {
 	}
 	
 	public static CoffeeMachine getCoffeeMachine() {
+		if(machine == null) {
+			machine = new CoffeeMachine(0, null);
+		}
 		return machine;
 	}
 
